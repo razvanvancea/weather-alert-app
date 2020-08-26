@@ -6,7 +6,7 @@ const { SG_KEY, OPEN_WEATHER_KEY, FROM, TO } = require("./credentials");
 sgMail.setApiKey(SG_KEY);
 
 // const cronJob = new CronJob("0 0 8 * * *", run);
-const cronJob = new CronJob("*/2 * * * * *", run);
+const cronJob = new CronJob("0 0 8 * * *", run);
 cronJob.start();
 
 async function run() {
